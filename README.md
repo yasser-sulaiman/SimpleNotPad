@@ -5,3 +5,6 @@ the totuorial can be found in this [link](https://www.youtube.com/watch?v=j4j1gb
 thanks to ProgrammingKnowledge Channel.
 # The interface is as shown bellow  
 ![GUI](https://github.com/yasser-sulaiman/SimpleNotPad/blob/main/interface.PNG)
+
+# Last Version's interface
+![GUI](https://github.com/yasser-sulaiman/SimpleNotPad/blob/main/interfaceLastVersion.PNG)
