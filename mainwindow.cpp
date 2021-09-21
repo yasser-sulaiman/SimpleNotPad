@@ -4,6 +4,10 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QFontDialog>
+#include <QFont>
+#include <QColorDialog>
+#include <QColor>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -116,5 +120,43 @@ void MainWindow::on_actionAbout_triggered()
     QString aboutMessage= "This GUI is only for learning purposes\
                           \n it was written using Qt creator and C++ language";
     QMessageBox::about(this, "About", aboutMessage);
+}
+
+
+void MainWindow::on_actionFont_triggered()
+{
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok, this);
+    if(ok){
+        ui->textEdit->setFont(font);
+    }else return;
+}
+
+
+void MainWindow::on_actionColor_triggered()
+{
+
+    QColor color = QColorDialog::getColor(Qt::black, this, "Choose a Color");
+    if(color.isValid()){
+        ui->textEdit->setTextColor(color);
+    }
+}
+
+
+void MainWindow::on_actionBackground_Color_triggered()
+{
+    QColor color = QColorDialog::getColor(Qt::black, this, "Choose a Color");
+    if(color.isValid()){
+        ui->textEdit->setPalette(QPalette(color));
+    }
+}
+
+
+void MainWindow::on_actionHighlight_triggered()
+{
+    QColor color = QColorDialog::getColor(Qt::black, this, "Choose a Color");
+    if(color.isValid()){
+        ui->textEdit->setTextBackgroundColor(color);
+    }
 }
 

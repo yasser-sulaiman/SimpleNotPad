@@ -1,14 +1,2 @@
-<RCC>
-    <qresource prefix="/rec">
-        <file>icons/about.jpg</file>
-        <file>icons/copy.png</file>
-        <file>icons/cut.jpg</file>
-        <file>icons/new.jpg</file>
-        <file>icons/open.jpg</file>
-        <file>icons/paste.jpg</file>
-        <file>icons/redo.jpg</file>
-        <file>icons/save as.jpg</file>
-        <file>icons/save.png</file>
-        <file>icons/undo.jpg</file>
-    </qresource>
-</RCC>
+<!DOCTYPE RCC>
+<RCC version="1.0"/>
