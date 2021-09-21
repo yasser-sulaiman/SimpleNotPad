@@ -42,9 +42,8 @@ private slots:
 
     void on_actionBackground_Color_triggered();
 
-    void on_actionHighlite_triggered();
 
-    void on_actionHighlight_triggered();
+    void on_actionHighlighte_triggered();
 
 private:
     Ui::MainWindow *ui;

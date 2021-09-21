@@ -152,7 +152,9 @@ void MainWindow::on_actionBackground_Color_triggered()
 }
 
 
-void MainWindow::on_actionHighlight_triggered()
+
+
+void MainWindow::on_actionHighlighte_triggered()
 {
     QColor color = QColorDialog::getColor(Qt::black, this, "Choose a Color");
     if(color.isValid()){
